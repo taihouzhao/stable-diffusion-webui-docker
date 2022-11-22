@@ -13,10 +13,10 @@ jobs:
     strategy:
       matrix:
         profile:
-          - auto
+          #- auto
           - hlky
-          - lstein
-          - download
+          #- lstein
+          # - download
     runs-on: ubuntu-latest
     name: ${{ matrix.profile }}
     steps:
