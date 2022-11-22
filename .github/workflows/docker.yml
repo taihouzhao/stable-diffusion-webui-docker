@@ -22,4 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       # better caching?
-      - run: docker compose --profile ${{ matrix.profile }} build --progress plain
+      - run: docker compose --profile ${{ matrix.profile }} build --progress plain  
+      - uses: pennsignals/publish_docker-compose@v0.1.0
+        with:
+          docker_compose: 'docker-compose.yml' # required
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
