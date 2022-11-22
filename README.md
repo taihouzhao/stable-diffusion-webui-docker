@@ -82,3 +82,6 @@ Special thanks to everyone behind these awesome projects, without them, none of 
 - [hlky/sd-enable-textual-inversion](https://github.com/hlky/sd-enable-textual-inversion)
 - [devilismyfriend/latent-diffusion](https://github.com/devilismyfriend/latent-diffusion)
 - [Hafiidz/latent-diffusion](https://github.com/Hafiidz/latent-diffusion)
+
+
+## test build
