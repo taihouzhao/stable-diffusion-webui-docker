@@ -14,8 +14,6 @@ x-base_service: &base_service
                 device_ids: ['0']
                 capabilities: [gpu]
 
-name: webui
-
 services:
   dummy:
     build: ./services/dummy/
