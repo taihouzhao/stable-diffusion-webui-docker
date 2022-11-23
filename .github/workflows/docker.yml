@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v3
       
       - run: docker compose --profile ${{ matrix.profile }} build --progress plain 
-      - run: docker inspect 
+      - run: docker inspect "$(docker ps -aq)" 
       
       - name: publish
         uses: pennsignals/publish_docker-compose@v0.1.0
