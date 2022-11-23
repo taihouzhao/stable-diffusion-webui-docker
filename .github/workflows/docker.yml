@@ -13,8 +13,9 @@ jobs:
     strategy:
       matrix:
         profile:
+          - dummy
           #- auto
-          - hlky
+          # - hlky
           #- lstein
           # - download
     runs-on: ubuntu-latest

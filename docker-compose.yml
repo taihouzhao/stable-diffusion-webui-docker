@@ -17,6 +17,10 @@ x-base_service: &base_service
 name: webui-docker
 
 services:
+  dummy:
+    build: ./services/dummy/
+    profiles: ["dummy"]
+
   download:
     build: ./services/download/
     profiles: ["download"]
