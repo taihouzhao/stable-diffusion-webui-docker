@@ -29,7 +29,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       
-      # - run: docker compose --profile ${{ matrix.profile }} build --progress plain  
+      - run: docker compose --profile ${{ matrix.profile }} build --progress plain  
       
       - name: publish
         uses: pennsignals/publish_docker-compose@v0.1.0
